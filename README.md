@@ -6,7 +6,7 @@ Corner cases (CC) are data that occur infrequently or represent a critical situa
 
 <img src="https://avs.auto/images/ui-controls.png">
 
-:book: <a ref="./paper/"> Corner cases (CC) papers </a>
+:book: <a href="./paper/"> Corner cases (CC) papers </a>
 
 <br>
 
