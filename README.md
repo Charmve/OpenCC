@@ -19,7 +19,7 @@ Systematization of corner cases on different levels as given in [5]. The theoret
 
 ## Some examples
 
-<img href="./images/corner_cases_in_levels.png">
+<img href="./images/some-examples-in-levels.png">
 
 **Scene 1**: A cyclist holds a stop sign sign sign in his hand. We don’t know when it’s going to lift the sign. A driverless car must understand this scenario. Even if he raises the Stop Sign sign, the autopilot should not stop.
 
