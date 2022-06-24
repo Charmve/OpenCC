@@ -2,7 +2,7 @@
 
 Automatic driving long tail / corner cases datasets
 
-Corner cases (CC) are data that occur infrequently or represent a critical situation and are only available in datasets to a limited extent, if at all. However, for ma- chine learning (ML), CC are important as they are required for training, verification, and improved performance of ML models during inference within automated driving systems.
+Corner cases (CC) are data that occur infrequently or represent a critical situation and are only available in datasets to a limited extent, if at all. However, for machine learning (ML), CC are important as they are required for training, verification, and improved performance of ML models during inference within automated driving systems.
 
 <img src="https://avs.auto/images/ui-controls.png">
 
@@ -41,7 +41,7 @@ Systematization of corner cases on different levels as given in [1]. The theoret
 
 <img src="./images/some-examples-in-levels.png">
 
-**Scene 1**: A cyclist holds a stop sign sign sign in his hand. We don’t know when it’s going to lift the sign. A driverless car must understand this scenario. Even if he raises the Stop Sign sign, the autopilot should not stop.
+**Scene 1**: A cyclist holds a stop sign in his hand. We don’t know when his going to lift the sign. A driverless car must understand this scenario. Even if he raises the Stop Sign, the autopilot should not stop.
 
 ![Waymo - automatic driving long tail challenge (2019)](./images/scene-1.jpg)
 
@@ -53,7 +53,7 @@ Systematization of corner cases on different levels as given in [1]. The theoret
 
 ![Waymo - automatic driving long tail challenge (2019)](./images/scene-3.gif)
 
-**Scene 4**: The traffic light is green, and the unmanned vehicle has the right of way. Although our unmanned vehicle arrives at the intersection first, it must give way to the special vehicles that will arrive later.
+**Scene 4**: The traffic light is green, and the unmanned vehicle has the right of way. Although our unmanned vehicle arrives at the intersection first, it must give way to special vehicles(ambulance, etc) that will arrive later.
 
 ![Waymo - automatic driving long tail challenge (2019)](./images/scene-4.gif)
 
