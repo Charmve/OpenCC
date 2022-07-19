@@ -4,17 +4,36 @@ Automatic driving long tail / corner cases datasets
 
 Corner cases (CC) are data that occur infrequently or represent a critical situation and are only available in datasets to a limited extent, if at all. However, for machine learning (ML), CC are important as they are required for training, verification, and improved performance of ML models during inference within automated driving systems.
 
-<img src="https://avs.auto/images/ui-controls.png">
+![image](https://user-images.githubusercontent.com/29084184/179703750-38e921fb-1b0c-4a82-b7ea-c8f9f4fd42e3.png)
 
-:book: <a href="./paper/"> Corner cases (CC) papers </a>
+Real-World Object-Level Corner Cases
+
+<!---
+<img src="https://avs.auto/images/ui-controls.png">
+-->
+:book: <a href="./paper/"> <b>Corner cases (CC) papers</b> </a>
+
+## Long-Tailed Recognition and Corner cases
+
+While the natural data distribution contains head, tail, and open classes, existing classification approaches focus mostly on the head, the tail, often in a closed setting. Traditional deep learning models are good at capturing the big data of head classes; more recently, few-shot learning methods have been developed for the small data of tail classes.
+
+<img width="447" alt="image" src="https://user-images.githubusercontent.com/29084184/179699597-f580c7e5-a98c-46e8-b6ce-ce8ab4e916a4.png">
+
+[1]Ziwei Liu. [Large-Scale Long-Tailed Recognition in an Open World](https://github.com/Charmve/OpenCC/blob/main/paper/Liu_Large-Scale_Long-Tailed_Recognition_in_an_Open_World_CVPR_2019_paper.pdf). CVPR2019
 
 <br>
 
-## Download
+## 🎁 Download
 
 <img src="https://raw.githubusercontent.com/giandbt/synboost/master/display_images/three_anomaly_scenarios.png">
 
-<img src="https://coda-dataset.github.io/assets/img/example.png" width="80%">
+[[1](https://github.com/Charmve/OpenCC/blob/main/paper/Pixel-wise%20Anomaly%20Detection%20in%20Complex%20Driving%20Scenes.pdf)] Giancarlo Di Biase. Pixel-wise Anomaly Detection in Complex Driving Scenes. CVPR 2021
+
+<img src="https://coda-dataset.github.io/assets/img/example.png">
+
+[[2](https://coda-dataset.github.io/)] CODA: A Real-World Road Corner Case Dataset for Object Detection in Autonomous Driving
+
+CODA数据集主要是从3个目标检测数据集中提取构建的，包括KITTI、nuScenes、ONCE。从这些公开数据集中选取了1500个场景图片，包含约6000个目标级别的corner case，⬆️ 如上图所示为论文中展示的corner case样例.
 
 **Open datasets:**
 
@@ -25,11 +44,15 @@ Corner cases (CC) are data that occur infrequently or represent a critical situa
 
 <br>
 
-<img align="right" src="./images/corner_cases_in_levels.png" width="343" title="Do what you like, and do it best!">
-
 ## Corner cases in levels
 
-Automated driving has become a major topic of interest not only in the active research community but also in mainstream media reports. Visual perception of such intelligent vehicles has experienced large progress in the last decade thanks to advances in deep learning techniques but some challenges still remain. One such challenge is the detection of corner cases. They are unexpected and unknown situations that occur while driving. Conventional visual perception methods are often not able to detect them because corner cases have not been witnessed during training. Hence, their detection is highly safety-critical, and detection methods can be applied to vast amounts of collected data to select suitable training data. A reliable detection of corner cases will not only further automate the data selection procedure and increase safety in autonomous driving but can thereby also affect the public acceptance of the new technology in a positive manner. In this work, we continue a previous systematization of corner cases on different levels by an extended set of examples for each level. Moreover, we group detection approaches into different categories and link them with the corner case levels. Hence, we give directions to showcase specific corner cases and basic guidelines on how to technically detect them.
+<img align="right" src="./images/corner_cases_in_levels.png" width="343" title="Do what you like, and do it best!">
+
+Automated driving has become a major topic of interest not only in the active research community but also in mainstream media reports. Visual perception of such intelligent vehicles has experienced large progress in the last decade thanks to advances in deep learning techniques but some challenges still remain. 
+
+One such challenge is the detection of corner cases. They are unexpected and unknown situations that occur while driving. Conventional visual perception methods are often not able to detect them because corner cases have not been witnessed during training. Hence, their detection is highly safety-critical, and detection methods can be applied to vast amounts of collected data to select suitable training data. A reliable detection of corner cases will not only further automate the data selection procedure and increase safety in autonomous driving but can thereby also affect the public acceptance of the new technology in a positive manner. 
+
+In this work[[2](https://github.com/Charmve/OpenCC/blob/main/paper/Corner%20Cases%20for%20Visual%20Perception%20in%20Automated%20Driving.pdf)], we continue a previous systematization of corner cases on different levels by an extended set of examples for each level. Moreover, we group detection approaches into different categories and link them with the corner case levels. Hence, we give directions to showcase specific corner cases and basic guidelines on how to technically detect them.
 
 Systematization of corner cases on different levels as given in [1]. The theoretical complexity of the detection typically increases from the bottom to the top.
 
@@ -213,13 +236,20 @@ We can increase the threshold but as can be seen below while the reflected pedes
 
 <img src="./images/threshold-3.jpg">
 
+- GAN - Generative Adversarial Networks
+
+https://user-images.githubusercontent.com/29084184/179702066-9e27f1fc-7251-4d9d-8f6f-cf12e2262cec.mp4
+
+[[4](https://openaccess.thecvf.com/content_CVPR_2019/papers/Karras_A_Style-Based_Generator_Architecture_for_Generative_Adversarial_Networks_CVPR_2019_paper.pdf)] Tero Karras, Samuli Laine. A Style-Based Generator Architecture for Generative Adversarial Networks. CVPR2019
+
 - Others
+	- expert system 
 
-expert system 
+	- inverse reinfocement learning
 
-inverse reinfocement learning
+	- data-driven perception-prediction mutil-task model training in large scale
 
-data-driven perception-prediction mutil-task model training in large scale
+（数据驱动的自动驾驶算法模型、BEVFormer、大模型融合相关论文，文件太大私信发）
 
 ## 交流群
 
